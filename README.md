@@ -3,6 +3,9 @@
 [<img src="img/iqblue_logo.png" width="800"/>](img/iqblue_logo.png)
 
 *Developed by C.A Torino, IQ-BLUE Integrated Systems*
+
+*November 10th 2023*
+
 * Links to IQ-BLUE Integrated Systems ZA.
     * [Website](https://iq-blue.com)
     * [TAK-ZA](https://tak-za.co.za)
