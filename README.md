@@ -1,5 +1,16 @@
 # WinTAK Simple Usage Plugin
 
+[<img src="img/iqblue_logo.png" width="800"/>](img/iqblue_logo.png)
+
+*Developed by C.A Torino, IQ-BLUE Integrated Systems*
+* Links to IQ-BLUE Integrated Systems ZA.
+    * [Website](https://iq-blue.com)
+    * [TAK-ZA](https://tak-za.co.za)
+    * [CSMT portal](https://csmt.iq-blue.com)
+    * [BI portal](https://bi.iq-blue.com)
+    * [IOT portal](https://iot.iq-blue.com)
+    * [F&Q](https://support.iq-blue.com)
+
 [<img src="img/Plugin.gif" width="800"/>](img/Plugin.gif)
 
 A simple plugin showing a few of the basic components which can be utilized when you develop a plugin for **WinTAK**
