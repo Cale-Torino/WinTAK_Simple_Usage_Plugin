@@ -1,0 +1,41 @@
+﻿<UserControl x:Class="WinTAK_Simple_Usage_Plugin.PluginUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WinTAK_Simple_Usage_Plugin" d:DataContext="{d:DesignInstance Type=local:Plugin_DockPane}"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <StackPanel Background="DarkOliveGreen">
+            <Button Content="Increase counter " Command="{Binding CounterCommand}" />
+            <TextBlock Text="{Binding Counter}" />
+            <!--<TextBlock Text="&#xD;"/>!-->
+            <ToggleButton Content="(de)activate" IsChecked="{Binding IsActive}"/>
+            <TextBlock>
+        <Run Text="{Binding Lat}"/>
+        <Run Text=","/>
+        <Run Text="{Binding Lon}"/>
+            </TextBlock>
+            <Button Content="MessageBox.Show " Command="{Binding MessageBoxCommand}" />
+            <Button Content="MessageBox.Show Caption " Command="{Binding MessageBoxCaptionCommand}" />
+            <Button Content="Notification.NotifyInfo " Command="{Binding NotificationCommand}" />
+            <Button Content="ICotMessageSender " Command="{Binding ICotMessageSenderCommand}" />
+            <Button Content="FocusMapArea " Command="{Binding FocusMapAreaCommand}" />
+            <Button Content="FocusMapAreaRadial " Command="{Binding FocusMapAreaRadialCommand}" />
+            <Ellipse Width="100" Height="100" Fill="Red" />
+            <Ellipse Width="80" Height="80" Fill="Orange" />
+            <Ellipse Width="60" Height="60" Fill="Yellow" />
+            <Ellipse Width="40" Height="40" Fill="Green" />
+            <Ellipse Width="20" Height="20" Fill="Blue" />
+        </StackPanel>
+    </Grid>
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/WinTak.UI;component/DefaultTheme.xaml" x:Name="Dict"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+</UserControl>
+

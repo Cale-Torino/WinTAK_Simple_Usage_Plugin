@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)ttp-dist\2.11.0\build\TTP-Dist.targets" Condition="Exists('$(NuGetPackageRoot)ttp-dist\2.11.0\build\TTP-Dist.targets')" />
+    <Import Project="$(NuGetPackageRoot)liblas\1.8.2\build\libLAS.targets" Condition="Exists('$(NuGetPackageRoot)liblas\1.8.2\build\libLAS.targets')" />
+    <Import Project="$(NuGetPackageRoot)angle-dist\2.1.17392\build\Angle-Dist.targets" Condition="Exists('$(NuGetPackageRoot)angle-dist\2.1.17392\build\Angle-Dist.targets')" />
+    <Import Project="$(NuGetPackageRoot)tak.kernel\4.6.32\build\TAK.Kernel.targets" Condition="Exists('$(NuGetPackageRoot)tak.kernel\4.6.32\build\TAK.Kernel.targets')" />
+  </ImportGroup>
+</Project>

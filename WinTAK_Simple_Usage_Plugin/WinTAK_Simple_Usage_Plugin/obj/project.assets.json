@@ -1,0 +1,1023 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.8": {
+      "Angle-Dist/2.1.17392": {
+        "type": "package",
+        "build": {
+          "build/Angle-Dist.targets": {}
+        }
+      },
+      "CommonServiceLocator/1.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll": {
+            "related": ".pdb;.XML"
+          }
+        },
+        "runtime": {
+          "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll": {
+            "related": ".pdb;.XML"
+          }
+        }
+      },
+      "libLAS/1.8.2": {
+        "type": "package",
+        "build": {
+          "build/libLAS.targets": {}
+        }
+      },
+      "Prism.Core/6.3.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Prism.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Prism.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Prism.Mef/6.3.1": {
+        "type": "package",
+        "dependencies": {
+          "CommonServiceLocator": "1.3.0",
+          "Prism.Wpf": "6.3.1"
+        },
+        "compile": {
+          "lib/net45/Prism.Mef.Wpf.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Prism.Mef.Wpf.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Prism.Wpf/6.3.1": {
+        "type": "package",
+        "dependencies": {
+          "CommonServiceLocator": "1.3.0",
+          "Prism.Core": "6.3.0"
+        },
+        "compile": {
+          "lib/net45/Prism.Wpf.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Prism.Wpf.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        }
+      },
+      "TAK.Kernel/4.6.32": {
+        "type": "package",
+        "dependencies": {
+          "Angle-Dist": "2.1.17392",
+          "LibLAS": "1.8.2",
+          "TTP-Dist": "2.11.0"
+        },
+        "build": {
+          "build/TAK.Kernel.targets": {}
+        }
+      },
+      "TTP-Dist/2.11.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/gdal_csharp.dll": {},
+          "lib/netstandard2.0/gdalconst_csharp.dll": {},
+          "lib/netstandard2.0/ogr_csharp.dll": {},
+          "lib/netstandard2.0/osr_csharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/gdal_csharp.dll": {},
+          "lib/netstandard2.0/gdalconst_csharp.dll": {},
+          "lib/netstandard2.0/ogr_csharp.dll": {},
+          "lib/netstandard2.0/osr_csharp.dll": {}
+        },
+        "build": {
+          "build/TTP-Dist.targets": {}
+        }
+      },
+      "WinTak-Dependencies/4.10.0.170": {
+        "type": "package",
+        "dependencies": {
+          "Prism.Core": "6.3.1",
+          "TAK.Kernel": "4.6.32"
+        },
+        "compile": {
+          "lib/MapEngine.Interop.dll": {},
+          "lib/Spyglass.Graphics.dll": {},
+          "lib/WinTak.Alerts.dll": {},
+          "lib/WinTak.Common.dll": {},
+          "lib/WinTak.CursorOnTarget.Placement.dll": {},
+          "lib/WinTak.CursorOnTarget.dll": {},
+          "lib/WinTak.Display.dll": {},
+          "lib/WinTak.Export.dll": {},
+          "lib/WinTak.Framework.Preferences.dll": {},
+          "lib/WinTak.Framework.dll": {},
+          "lib/WinTak.Geometry.dll": {},
+          "lib/WinTak.Graphics.dll": {},
+          "lib/WinTak.Import.dll": {},
+          "lib/WinTak.Location.dll": {},
+          "lib/WinTak.Mapping.dll": {},
+          "lib/WinTak.MissionPackages.dll": {},
+          "lib/WinTak.Net.dll": {},
+          "lib/WinTak.Overlays.dll": {},
+          "lib/WinTak.UI.Controls.dll": {},
+          "lib/WinTak.UI.dll": {}
+        },
+        "runtime": {
+          "lib/MapEngine.Interop.dll": {},
+          "lib/Spyglass.Graphics.dll": {},
+          "lib/WinTak.Alerts.dll": {},
+          "lib/WinTak.Common.dll": {},
+          "lib/WinTak.CursorOnTarget.Placement.dll": {},
+          "lib/WinTak.CursorOnTarget.dll": {},
+          "lib/WinTak.Display.dll": {},
+          "lib/WinTak.Export.dll": {},
+          "lib/WinTak.Framework.Preferences.dll": {},
+          "lib/WinTak.Framework.dll": {},
+          "lib/WinTak.Geometry.dll": {},
+          "lib/WinTak.Graphics.dll": {},
+          "lib/WinTak.Import.dll": {},
+          "lib/WinTak.Location.dll": {},
+          "lib/WinTak.Mapping.dll": {},
+          "lib/WinTak.MissionPackages.dll": {},
+          "lib/WinTak.Net.dll": {},
+          "lib/WinTak.Overlays.dll": {},
+          "lib/WinTak.UI.Controls.dll": {},
+          "lib/WinTak.UI.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.8/win": {
+      "Angle-Dist/2.1.17392": {
+        "type": "package",
+        "build": {
+          "build/Angle-Dist.targets": {}
+        }
+      },
+      "CommonServiceLocator/1.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll": {
+            "related": ".pdb;.XML"
+          }
+        },
+        "runtime": {
+          "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll": {
+            "related": ".pdb;.XML"
+          }
+        }
+      },
+      "libLAS/1.8.2": {
+        "type": "package",
+        "build": {
+          "build/libLAS.targets": {}
+        }
+      },
+      "Prism.Core/6.3.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Prism.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Prism.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Prism.Mef/6.3.1": {
+        "type": "package",
+        "dependencies": {
+          "CommonServiceLocator": "1.3.0",
+          "Prism.Wpf": "6.3.1"
+        },
+        "compile": {
+          "lib/net45/Prism.Mef.Wpf.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Prism.Mef.Wpf.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Prism.Wpf/6.3.1": {
+        "type": "package",
+        "dependencies": {
+          "CommonServiceLocator": "1.3.0",
+          "Prism.Core": "6.3.0"
+        },
+        "compile": {
+          "lib/net45/Prism.Wpf.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Prism.Wpf.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        }
+      },
+      "TAK.Kernel/4.6.32": {
+        "type": "package",
+        "dependencies": {
+          "Angle-Dist": "2.1.17392",
+          "LibLAS": "1.8.2",
+          "TTP-Dist": "2.11.0"
+        },
+        "build": {
+          "build/TAK.Kernel.targets": {}
+        }
+      },
+      "TTP-Dist/2.11.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/gdal_csharp.dll": {},
+          "lib/netstandard2.0/gdalconst_csharp.dll": {},
+          "lib/netstandard2.0/ogr_csharp.dll": {},
+          "lib/netstandard2.0/osr_csharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/gdal_csharp.dll": {},
+          "lib/netstandard2.0/gdalconst_csharp.dll": {},
+          "lib/netstandard2.0/ogr_csharp.dll": {},
+          "lib/netstandard2.0/osr_csharp.dll": {}
+        },
+        "build": {
+          "build/TTP-Dist.targets": {}
+        }
+      },
+      "WinTak-Dependencies/4.10.0.170": {
+        "type": "package",
+        "dependencies": {
+          "Prism.Core": "6.3.1",
+          "TAK.Kernel": "4.6.32"
+        },
+        "compile": {
+          "lib/MapEngine.Interop.dll": {},
+          "lib/Spyglass.Graphics.dll": {},
+          "lib/WinTak.Alerts.dll": {},
+          "lib/WinTak.Common.dll": {},
+          "lib/WinTak.CursorOnTarget.Placement.dll": {},
+          "lib/WinTak.CursorOnTarget.dll": {},
+          "lib/WinTak.Display.dll": {},
+          "lib/WinTak.Export.dll": {},
+          "lib/WinTak.Framework.Preferences.dll": {},
+          "lib/WinTak.Framework.dll": {},
+          "lib/WinTak.Geometry.dll": {},
+          "lib/WinTak.Graphics.dll": {},
+          "lib/WinTak.Import.dll": {},
+          "lib/WinTak.Location.dll": {},
+          "lib/WinTak.Mapping.dll": {},
+          "lib/WinTak.MissionPackages.dll": {},
+          "lib/WinTak.Net.dll": {},
+          "lib/WinTak.Overlays.dll": {},
+          "lib/WinTak.UI.Controls.dll": {},
+          "lib/WinTak.UI.dll": {}
+        },
+        "runtime": {
+          "lib/MapEngine.Interop.dll": {},
+          "lib/Spyglass.Graphics.dll": {},
+          "lib/WinTak.Alerts.dll": {},
+          "lib/WinTak.Common.dll": {},
+          "lib/WinTak.CursorOnTarget.Placement.dll": {},
+          "lib/WinTak.CursorOnTarget.dll": {},
+          "lib/WinTak.Display.dll": {},
+          "lib/WinTak.Export.dll": {},
+          "lib/WinTak.Framework.Preferences.dll": {},
+          "lib/WinTak.Framework.dll": {},
+          "lib/WinTak.Geometry.dll": {},
+          "lib/WinTak.Graphics.dll": {},
+          "lib/WinTak.Import.dll": {},
+          "lib/WinTak.Location.dll": {},
+          "lib/WinTak.Mapping.dll": {},
+          "lib/WinTak.MissionPackages.dll": {},
+          "lib/WinTak.Net.dll": {},
+          "lib/WinTak.Overlays.dll": {},
+          "lib/WinTak.UI.Controls.dll": {},
+          "lib/WinTak.UI.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.8/win-arm64": {
+      "Angle-Dist/2.1.17392": {
+        "type": "package",
+        "build": {
+          "build/Angle-Dist.targets": {}
+        }
+      },
+      "CommonServiceLocator/1.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll": {
+            "related": ".pdb;.XML"
+          }
+        },
+        "runtime": {
+          "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll": {
+            "related": ".pdb;.XML"
+          }
+        }
+      },
+      "libLAS/1.8.2": {
+        "type": "package",
+        "build": {
+          "build/libLAS.targets": {}
+        }
+      },
+      "Prism.Core/6.3.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Prism.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Prism.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Prism.Mef/6.3.1": {
+        "type": "package",
+        "dependencies": {
+          "CommonServiceLocator": "1.3.0",
+          "Prism.Wpf": "6.3.1"
+        },
+        "compile": {
+          "lib/net45/Prism.Mef.Wpf.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Prism.Mef.Wpf.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Prism.Wpf/6.3.1": {
+        "type": "package",
+        "dependencies": {
+          "CommonServiceLocator": "1.3.0",
+          "Prism.Core": "6.3.0"
+        },
+        "compile": {
+          "lib/net45/Prism.Wpf.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Prism.Wpf.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        }
+      },
+      "TAK.Kernel/4.6.32": {
+        "type": "package",
+        "dependencies": {
+          "Angle-Dist": "2.1.17392",
+          "LibLAS": "1.8.2",
+          "TTP-Dist": "2.11.0"
+        },
+        "build": {
+          "build/TAK.Kernel.targets": {}
+        }
+      },
+      "TTP-Dist/2.11.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/gdal_csharp.dll": {},
+          "lib/netstandard2.0/gdalconst_csharp.dll": {},
+          "lib/netstandard2.0/ogr_csharp.dll": {},
+          "lib/netstandard2.0/osr_csharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/gdal_csharp.dll": {},
+          "lib/netstandard2.0/gdalconst_csharp.dll": {},
+          "lib/netstandard2.0/ogr_csharp.dll": {},
+          "lib/netstandard2.0/osr_csharp.dll": {}
+        },
+        "build": {
+          "build/TTP-Dist.targets": {}
+        }
+      },
+      "WinTak-Dependencies/4.10.0.170": {
+        "type": "package",
+        "dependencies": {
+          "Prism.Core": "6.3.1",
+          "TAK.Kernel": "4.6.32"
+        },
+        "compile": {
+          "lib/MapEngine.Interop.dll": {},
+          "lib/Spyglass.Graphics.dll": {},
+          "lib/WinTak.Alerts.dll": {},
+          "lib/WinTak.Common.dll": {},
+          "lib/WinTak.CursorOnTarget.Placement.dll": {},
+          "lib/WinTak.CursorOnTarget.dll": {},
+          "lib/WinTak.Display.dll": {},
+          "lib/WinTak.Export.dll": {},
+          "lib/WinTak.Framework.Preferences.dll": {},
+          "lib/WinTak.Framework.dll": {},
+          "lib/WinTak.Geometry.dll": {},
+          "lib/WinTak.Graphics.dll": {},
+          "lib/WinTak.Import.dll": {},
+          "lib/WinTak.Location.dll": {},
+          "lib/WinTak.Mapping.dll": {},
+          "lib/WinTak.MissionPackages.dll": {},
+          "lib/WinTak.Net.dll": {},
+          "lib/WinTak.Overlays.dll": {},
+          "lib/WinTak.UI.Controls.dll": {},
+          "lib/WinTak.UI.dll": {}
+        },
+        "runtime": {
+          "lib/MapEngine.Interop.dll": {},
+          "lib/Spyglass.Graphics.dll": {},
+          "lib/WinTak.Alerts.dll": {},
+          "lib/WinTak.Common.dll": {},
+          "lib/WinTak.CursorOnTarget.Placement.dll": {},
+          "lib/WinTak.CursorOnTarget.dll": {},
+          "lib/WinTak.Display.dll": {},
+          "lib/WinTak.Export.dll": {},
+          "lib/WinTak.Framework.Preferences.dll": {},
+          "lib/WinTak.Framework.dll": {},
+          "lib/WinTak.Geometry.dll": {},
+          "lib/WinTak.Graphics.dll": {},
+          "lib/WinTak.Import.dll": {},
+          "lib/WinTak.Location.dll": {},
+          "lib/WinTak.Mapping.dll": {},
+          "lib/WinTak.MissionPackages.dll": {},
+          "lib/WinTak.Net.dll": {},
+          "lib/WinTak.Overlays.dll": {},
+          "lib/WinTak.UI.Controls.dll": {},
+          "lib/WinTak.UI.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.8/win-x64": {
+      "Angle-Dist/2.1.17392": {
+        "type": "package",
+        "build": {
+          "build/Angle-Dist.targets": {}
+        }
+      },
+      "CommonServiceLocator/1.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll": {
+            "related": ".pdb;.XML"
+          }
+        },
+        "runtime": {
+          "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll": {
+            "related": ".pdb;.XML"
+          }
+        }
+      },
+      "libLAS/1.8.2": {
+        "type": "package",
+        "build": {
+          "build/libLAS.targets": {}
+        }
+      },
+      "Prism.Core/6.3.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Prism.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Prism.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Prism.Mef/6.3.1": {
+        "type": "package",
+        "dependencies": {
+          "CommonServiceLocator": "1.3.0",
+          "Prism.Wpf": "6.3.1"
+        },
+        "compile": {
+          "lib/net45/Prism.Mef.Wpf.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Prism.Mef.Wpf.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Prism.Wpf/6.3.1": {
+        "type": "package",
+        "dependencies": {
+          "CommonServiceLocator": "1.3.0",
+          "Prism.Core": "6.3.0"
+        },
+        "compile": {
+          "lib/net45/Prism.Wpf.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Prism.Wpf.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        }
+      },
+      "TAK.Kernel/4.6.32": {
+        "type": "package",
+        "dependencies": {
+          "Angle-Dist": "2.1.17392",
+          "LibLAS": "1.8.2",
+          "TTP-Dist": "2.11.0"
+        },
+        "build": {
+          "build/TAK.Kernel.targets": {}
+        }
+      },
+      "TTP-Dist/2.11.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/gdal_csharp.dll": {},
+          "lib/netstandard2.0/gdalconst_csharp.dll": {},
+          "lib/netstandard2.0/ogr_csharp.dll": {},
+          "lib/netstandard2.0/osr_csharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/gdal_csharp.dll": {},
+          "lib/netstandard2.0/gdalconst_csharp.dll": {},
+          "lib/netstandard2.0/ogr_csharp.dll": {},
+          "lib/netstandard2.0/osr_csharp.dll": {}
+        },
+        "build": {
+          "build/TTP-Dist.targets": {}
+        }
+      },
+      "WinTak-Dependencies/4.10.0.170": {
+        "type": "package",
+        "dependencies": {
+          "Prism.Core": "6.3.1",
+          "TAK.Kernel": "4.6.32"
+        },
+        "compile": {
+          "lib/MapEngine.Interop.dll": {},
+          "lib/Spyglass.Graphics.dll": {},
+          "lib/WinTak.Alerts.dll": {},
+          "lib/WinTak.Common.dll": {},
+          "lib/WinTak.CursorOnTarget.Placement.dll": {},
+          "lib/WinTak.CursorOnTarget.dll": {},
+          "lib/WinTak.Display.dll": {},
+          "lib/WinTak.Export.dll": {},
+          "lib/WinTak.Framework.Preferences.dll": {},
+          "lib/WinTak.Framework.dll": {},
+          "lib/WinTak.Geometry.dll": {},
+          "lib/WinTak.Graphics.dll": {},
+          "lib/WinTak.Import.dll": {},
+          "lib/WinTak.Location.dll": {},
+          "lib/WinTak.Mapping.dll": {},
+          "lib/WinTak.MissionPackages.dll": {},
+          "lib/WinTak.Net.dll": {},
+          "lib/WinTak.Overlays.dll": {},
+          "lib/WinTak.UI.Controls.dll": {},
+          "lib/WinTak.UI.dll": {}
+        },
+        "runtime": {
+          "lib/MapEngine.Interop.dll": {},
+          "lib/Spyglass.Graphics.dll": {},
+          "lib/WinTak.Alerts.dll": {},
+          "lib/WinTak.Common.dll": {},
+          "lib/WinTak.CursorOnTarget.Placement.dll": {},
+          "lib/WinTak.CursorOnTarget.dll": {},
+          "lib/WinTak.Display.dll": {},
+          "lib/WinTak.Export.dll": {},
+          "lib/WinTak.Framework.Preferences.dll": {},
+          "lib/WinTak.Framework.dll": {},
+          "lib/WinTak.Geometry.dll": {},
+          "lib/WinTak.Graphics.dll": {},
+          "lib/WinTak.Import.dll": {},
+          "lib/WinTak.Location.dll": {},
+          "lib/WinTak.Mapping.dll": {},
+          "lib/WinTak.MissionPackages.dll": {},
+          "lib/WinTak.Net.dll": {},
+          "lib/WinTak.Overlays.dll": {},
+          "lib/WinTak.UI.Controls.dll": {},
+          "lib/WinTak.UI.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.8/win-x86": {
+      "Angle-Dist/2.1.17392": {
+        "type": "package",
+        "build": {
+          "build/Angle-Dist.targets": {}
+        }
+      },
+      "CommonServiceLocator/1.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll": {
+            "related": ".pdb;.XML"
+          }
+        },
+        "runtime": {
+          "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll": {
+            "related": ".pdb;.XML"
+          }
+        }
+      },
+      "libLAS/1.8.2": {
+        "type": "package",
+        "build": {
+          "build/libLAS.targets": {}
+        }
+      },
+      "Prism.Core/6.3.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Prism.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Prism.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Prism.Mef/6.3.1": {
+        "type": "package",
+        "dependencies": {
+          "CommonServiceLocator": "1.3.0",
+          "Prism.Wpf": "6.3.1"
+        },
+        "compile": {
+          "lib/net45/Prism.Mef.Wpf.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Prism.Mef.Wpf.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Prism.Wpf/6.3.1": {
+        "type": "package",
+        "dependencies": {
+          "CommonServiceLocator": "1.3.0",
+          "Prism.Core": "6.3.0"
+        },
+        "compile": {
+          "lib/net45/Prism.Wpf.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Prism.Wpf.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        }
+      },
+      "TAK.Kernel/4.6.32": {
+        "type": "package",
+        "dependencies": {
+          "Angle-Dist": "2.1.17392",
+          "LibLAS": "1.8.2",
+          "TTP-Dist": "2.11.0"
+        },
+        "build": {
+          "build/TAK.Kernel.targets": {}
+        }
+      },
+      "TTP-Dist/2.11.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/gdal_csharp.dll": {},
+          "lib/netstandard2.0/gdalconst_csharp.dll": {},
+          "lib/netstandard2.0/ogr_csharp.dll": {},
+          "lib/netstandard2.0/osr_csharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/gdal_csharp.dll": {},
+          "lib/netstandard2.0/gdalconst_csharp.dll": {},
+          "lib/netstandard2.0/ogr_csharp.dll": {},
+          "lib/netstandard2.0/osr_csharp.dll": {}
+        },
+        "build": {
+          "build/TTP-Dist.targets": {}
+        }
+      },
+      "WinTak-Dependencies/4.10.0.170": {
+        "type": "package",
+        "dependencies": {
+          "Prism.Core": "6.3.1",
+          "TAK.Kernel": "4.6.32"
+        },
+        "compile": {
+          "lib/MapEngine.Interop.dll": {},
+          "lib/Spyglass.Graphics.dll": {},
+          "lib/WinTak.Alerts.dll": {},
+          "lib/WinTak.Common.dll": {},
+          "lib/WinTak.CursorOnTarget.Placement.dll": {},
+          "lib/WinTak.CursorOnTarget.dll": {},
+          "lib/WinTak.Display.dll": {},
+          "lib/WinTak.Export.dll": {},
+          "lib/WinTak.Framework.Preferences.dll": {},
+          "lib/WinTak.Framework.dll": {},
+          "lib/WinTak.Geometry.dll": {},
+          "lib/WinTak.Graphics.dll": {},
+          "lib/WinTak.Import.dll": {},
+          "lib/WinTak.Location.dll": {},
+          "lib/WinTak.Mapping.dll": {},
+          "lib/WinTak.MissionPackages.dll": {},
+          "lib/WinTak.Net.dll": {},
+          "lib/WinTak.Overlays.dll": {},
+          "lib/WinTak.UI.Controls.dll": {},
+          "lib/WinTak.UI.dll": {}
+        },
+        "runtime": {
+          "lib/MapEngine.Interop.dll": {},
+          "lib/Spyglass.Graphics.dll": {},
+          "lib/WinTak.Alerts.dll": {},
+          "lib/WinTak.Common.dll": {},
+          "lib/WinTak.CursorOnTarget.Placement.dll": {},
+          "lib/WinTak.CursorOnTarget.dll": {},
+          "lib/WinTak.Display.dll": {},
+          "lib/WinTak.Export.dll": {},
+          "lib/WinTak.Framework.Preferences.dll": {},
+          "lib/WinTak.Framework.dll": {},
+          "lib/WinTak.Geometry.dll": {},
+          "lib/WinTak.Graphics.dll": {},
+          "lib/WinTak.Import.dll": {},
+          "lib/WinTak.Location.dll": {},
+          "lib/WinTak.Mapping.dll": {},
+          "lib/WinTak.MissionPackages.dll": {},
+          "lib/WinTak.Net.dll": {},
+          "lib/WinTak.Overlays.dll": {},
+          "lib/WinTak.UI.Controls.dll": {},
+          "lib/WinTak.UI.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Angle-Dist/2.1.17392": {
+      "sha512": "qmK523yU1hh1MDwwh3Js2I/ax/jhyt87gZcIl6yblmZJBUsK3nCjrAXM2vKSSlHvWg+rcoQGzwwTAtkuVHv0Sw==",
+      "type": "package",
+      "path": "angle-dist/2.1.17392",
+      "files": [
+        ".nupkg.metadata",
+        "angle-dist.2.1.17392.nupkg.sha512",
+        "angle-dist.nuspec",
+        "build/Angle-Dist.targets",
+        "build/x64/d3dcompiler_47.dll",
+        "build/x64/libEGL.dll",
+        "build/x64/libGLESv2.dll"
+      ]
+    },
+    "CommonServiceLocator/1.3.0": {
+      "sha512": "fbjO0SNwbOFPdwVfyqv+B7gIJ2CVBOFPKqn1mDDECK7KER8jFaOdcvroFYoAHa0ktPbxi5s+15qOLnA96f8GSA==",
+      "type": "package",
+      "path": "commonservicelocator/1.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "commonservicelocator.1.3.0.nupkg.sha512",
+        "commonservicelocator.nuspec",
+        "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.XML",
+        "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll",
+        "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.pdb"
+      ]
+    },
+    "libLAS/1.8.2": {
+      "sha512": "EanPHCmV8810QHLnHj4qCYQLYUkkYZRGnJoqHWGWpeQfol3H1xrCpyFRBD4KBmQuNefLlA+4B5r+vZ9wtKINoA==",
+      "type": "package",
+      "path": "liblas/1.8.2",
+      "files": [
+        ".nupkg.metadata",
+        "build/libLAS.targets",
+        "build/x64/liblas.dll",
+        "build/x64/liblas_c.dll",
+        "liblas.1.8.2.nupkg.sha512",
+        "liblas.nuspec"
+      ]
+    },
+    "Prism.Core/6.3.1": {
+      "sha512": "rF/F5Goi/kKGuonF04rcElH2dFzldi+7XlAv97P4xUvP64q94xs8Uyxm8DeOg3tcUu6eMuYgpVC1vtevgtbbzg==",
+      "type": "package",
+      "path": "prism.core/6.3.1",
+      "files": [
+        ".nupkg.metadata",
+        "lib/net45/Prism.dll",
+        "lib/net45/Prism.xml",
+        "prism.core.6.3.1.nupkg.sha512",
+        "prism.core.nuspec"
+      ]
+    },
+    "Prism.Mef/6.3.1": {
+      "sha512": "JRPLWl91um7MKu2ij0YjVQK4zAtkqcvGxjiKGYOD1FDm/W3OLUwMlwB5AxVaw1z21TuVNLCpxiql3BnUPyNwOw==",
+      "type": "package",
+      "path": "prism.mef/6.3.1",
+      "files": [
+        ".nupkg.metadata",
+        "lib/net45/Prism.Mef.Wpf.dll",
+        "lib/net45/Prism.Mef.Wpf.xml",
+        "prism.mef.6.3.1.nupkg.sha512",
+        "prism.mef.nuspec"
+      ]
+    },
+    "Prism.Wpf/6.3.1": {
+      "sha512": "BWPwtYGr05FZE8n6Qt+aJFer3PEAWSR9duIaejPK52PvMMQiMUgjyq4Jor48LtUtmqGnFYtGfqStBsrLEkA4Vw==",
+      "type": "package",
+      "path": "prism.wpf/6.3.1",
+      "files": [
+        ".nupkg.metadata",
+        "lib/net45/Prism.Wpf.dll",
+        "lib/net45/Prism.Wpf.xml",
+        "lib/net45/System.Windows.Interactivity.dll",
+        "prism.wpf.6.3.1.nupkg.sha512",
+        "prism.wpf.nuspec"
+      ]
+    },
+    "TAK.Kernel/4.6.32": {
+      "sha512": "oyDoqACLRuOYpV6Re3xcmuTTOV6uB0oMOT+OThcyfre/Bp/jDCOBTYjk7C3D9EdwlF0WtsQfSrk9P6YaAmRuqA==",
+      "type": "package",
+      "path": "tak.kernel/4.6.32",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        "build/TAK.Kernel.targets",
+        "build/x64/takengine.dll",
+        "build/x64/takengine.lib",
+        "tak.kernel.4.6.32.nupkg.sha512",
+        "tak.kernel.nuspec",
+        "tools/x64/TAK.Engine.dll"
+      ]
+    },
+    "TTP-Dist/2.11.0": {
+      "sha512": "lVAPpS4nldOSgHt31fij5jG8BpKy+62qb7sMU9TloiSGawHl3FsRku0t4mHHOjA2lsVLo/z3VoJk2BWoEK/yEw==",
+      "type": "package",
+      "path": "ttp-dist/2.11.0",
+      "files": [
+        ".nupkg.metadata",
+        "build/TTP-Dist.targets",
+        "build/x64/assimp.dll",
+        "build/x64/engine-bcrypt.dll",
+        "build/x64/engine-ncrypt.dll",
+        "build/x64/gdal204.dll",
+        "build/x64/gdal_wrap.dll",
+        "build/x64/gdalconst_wrap.dll",
+        "build/x64/geos_c.dll",
+        "build/x64/iconv-2.dll",
+        "build/x64/kdu_v64R.dll",
+        "build/x64/libcrypto-1_1.dll",
+        "build/x64/libcurl.dll",
+        "build/x64/libexpat.dll",
+        "build/x64/libssl-1_1.dll",
+        "build/x64/libxml2.dll",
+        "build/x64/lti_dsdk_9.5.dll",
+        "build/x64/nghttp2.dll",
+        "build/x64/ogdi.dll",
+        "build/x64/ogr_wrap.dll",
+        "build/x64/osr_wrap.dll",
+        "build/x64/proj.dll",
+        "build/x64/spatialite.dll",
+        "build/x64/sqlite3.dll",
+        "build/x64/tbb.dll",
+        "build/x64/vrf.dll",
+        "build/x64/zlibwapi.dll",
+        "lib/netstandard2.0/gdal_csharp.dll",
+        "lib/netstandard2.0/gdalconst_csharp.dll",
+        "lib/netstandard2.0/ogr_csharp.dll",
+        "lib/netstandard2.0/osr_csharp.dll",
+        "ttp-dist.2.11.0.nupkg.sha512",
+        "ttp-dist.nuspec"
+      ]
+    },
+    "WinTak-Dependencies/4.10.0.170": {
+      "sha512": "lsXNIwh+wWFQ8g7odZUBTNkzQT6nD02Jz3mege/hW3KVQe4uM6PdAKn9aQN4RMxETQQ6f3ZsNUZPV7d7PLp0Gg==",
+      "type": "package",
+      "path": "wintak-dependencies/4.10.0.170",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        "lib/MapEngine.Interop.dll",
+        "lib/Spyglass.Graphics.dll",
+        "lib/WinTak.Alerts.dll",
+        "lib/WinTak.Common.dll",
+        "lib/WinTak.CursorOnTarget.Placement.dll",
+        "lib/WinTak.CursorOnTarget.dll",
+        "lib/WinTak.Display.dll",
+        "lib/WinTak.Export.dll",
+        "lib/WinTak.Framework.Preferences.dll",
+        "lib/WinTak.Framework.dll",
+        "lib/WinTak.Geometry.dll",
+        "lib/WinTak.Graphics.dll",
+        "lib/WinTak.Import.dll",
+        "lib/WinTak.Location.dll",
+        "lib/WinTak.Mapping.dll",
+        "lib/WinTak.MissionPackages.dll",
+        "lib/WinTak.Net.dll",
+        "lib/WinTak.Overlays.dll",
+        "lib/WinTak.UI.Controls.dll",
+        "lib/WinTak.UI.dll",
+        "tools/init.ps1",
+        "wintak-dependencies.4.10.0.170.nupkg.sha512",
+        "wintak-dependencies.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.8": [
+      "Prism.Mef >= 6.3.1",
+      "WinTak-Dependencies >= 4.10.0.170"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\User501\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\User501\\Documents\\GitHub\\WinTAK_Simple_Usage_Plugin\\WinTAK_Simple_Usage_Plugin\\WinTAK_Simple_Usage_Plugin\\WinTAK_Simple_Usage_Plugin.csproj",
+      "projectName": "WinTAK_Simple_Usage_Plugin",
+      "projectPath": "C:\\Users\\User501\\Documents\\GitHub\\WinTAK_Simple_Usage_Plugin\\WinTAK_Simple_Usage_Plugin\\WinTAK_Simple_Usage_Plugin\\WinTAK_Simple_Usage_Plugin.csproj",
+      "packagesPath": "C:\\Users\\User501\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\User501\\Documents\\GitHub\\WinTAK_Simple_Usage_Plugin\\WinTAK_Simple_Usage_Plugin\\WinTAK_Simple_Usage_Plugin\\obj\\",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\User501\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net48"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\WinTAK\\NuGet": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net48": {
+          "projectReferences": {}
+        }
+      }
+    },
+    "frameworks": {
+      "net48": {
+        "dependencies": {
+          "Prism.Mef": {
+            "target": "Package",
+            "version": "[6.3.1, )"
+          },
+          "WinTak-Dependencies": {
+            "target": "Package",
+            "version": "[4.10.0.170, )"
+          }
+        }
+      }
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-arm64": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}
