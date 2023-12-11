@@ -24,6 +24,7 @@ Youtube example video can be found [coming soon]().
 
 Plugin specs:
 - Plugin made for WinTAK `4.10.0.170`
+- .Net Framework 4.8.0
 - Visual Studio 2022
 - Windows 11
 - Nvidea 2060 super
