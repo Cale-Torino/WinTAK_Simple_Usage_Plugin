@@ -55,6 +55,6 @@ using System.Windows;
 [assembly: AssemblyFileVersion("1.0.0.0")]
 [assembly: WinTak.Framework.TakSdkVersion("4.10.0.170")]
 [assembly: WinTak.Framework.PluginDescription("WinTAK Simple Usage Plugin Product By C.A Torino")]
-//[assembly: WinTak.Framework.PluginIcon(@"C:\Users\User501\source\repos\WinTAK_Simple_Usage_Plugin\WinTAK_Simple_Usage_Plugin\Img\tech.ico")]
+//[assembly: WinTak.Framework.PluginIcon(@"C:\Users\User\source\repos\WinTAK_Simple_Usage_Plugin\WinTAK_Simple_Usage_Plugin\Img\tech.ico")]
 [assembly: WinTak.Framework.PluginIcon("pack://application:,,,/WinTAK_Simple_Usage_Plugin;component/Img/tech.ico")]
 [assembly: WinTak.Framework.PluginName("WinTAK_Simple_Usage_Plugin")]

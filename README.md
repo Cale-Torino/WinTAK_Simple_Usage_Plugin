@@ -1,18 +1,8 @@
 # WinTAK Simple Usage Plugin
 
-[<img src="img/iqblue_logo.png" width="800"/>](img/iqblue_logo.png)
-
-*Developed by C.A Torino, IQ-BLUE Integrated Systems*
+*Developed by C.A Torino,*
 
 *November 10th 2023*
-
-* Links to IQ-BLUE Integrated Systems ZA.
-    * [Website](https://iq-blue.com)
-    * [TAK-ZA](https://tak-za.co.za)
-    * [CSMT portal](https://csmt.iq-blue.com)
-    * [BI portal](https://bi.iq-blue.com)
-    * [IOT portal](https://iot.iq-blue.com)
-    * [F&Q](https://support.iq-blue.com)
 
 [<img src="img/Plugin.gif" width="800"/>](img/Plugin.gif)
 
@@ -371,3 +361,11 @@ Performance is much better with **8 GB - 12 or 16 GB** is even better.
 
 * [WinForms FreeTAKServer_Manager application](https://github.com/Cale-Torino/FreeTAKServer_Manager/tree/main/WinForms "WinForms application")
 * [WPF FreeTAKServer_Manager application](https://github.com/Cale-Torino/FreeTAKServer_Manager/tree/main/WPF "WPF application")
+
+* Links to IQ-BLUE Integrated Systems ZA.
+    * [Website](https://iq-blue.com)
+    * [TAK-ZA](https://tak-za.co.za)
+    * [CSMT portal](https://csmt.iq-blue.com)
+    * [BI portal](https://bi.iq-blue.com)
+    * [IOT portal](https://iot.iq-blue.com)
+    * [F&Q](https://support.iq-blue.com)
