@@ -20,7 +20,6 @@ using System.Xml;
 //using WinTak.Framework;
 //using WinTak.Framework.Docking;
 //using WinTak.Framework.Docking.Attributes;
-//C:\Users\User\AppData\Roaming\WinTAK\Plugins\WinTAK_Simple_Usage_Plugin
 
 namespace WinTAK_Simple_Usage_Plugin
 {
