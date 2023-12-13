@@ -1,0 +1,56 @@
+﻿
+
+C:\Program Files\WinTAK>WpkBuilder.exe --help
+WpkBuilder 1.0.0.0
+Copyright ©  2020
+
+  -v, --verbose         Set output to verbose messages.
+
+  -i, --id              Id of WinTAK Plugin
+
+  -d, --description     Description of WinTAK Plugin
+
+  --plugins64           Semicolon seperated list of x64 Plugin Dlls or directories containing Plugin Dlls
+
+  --toolsData           Semicolon seperated list of files or directories containing data files to be included with your
+                        plugin
+
+  --icon                Icon (.png) of WinTAK Plugin
+
+  --generateJsonList    Generate a plugins.json file describing all the plugins in the specified semicolon seperated
+                        list of directories
+
+  --preserveTempDir     Do not delete the temporary directory when finished
+
+  --help                Display this help screen.
+
+  --version             Display version information.
+
+
+  ------------------------------------------------------------------------------------------------------------
+
+WpkBuilder.exe -help
+
+-i WinTAK_Simple_Usage_Plugin
+
+-d WinTAK Simple Usage Plugin By C.A Torino
+
+--plugins64 "C:\Users\User\Documents\GitHub\WinTAK_Simple_Usage_Plugin\WinTAK_Simple_Usage_Plugin\WinTAK_Simple_Usage_Plugin\WinTAK_Simple_Usage_Plugin.dll"
+
+--toolsData "C:\Users\User\Documents\GitHub\WinTAK_Simple_Usage_Plugin\WinTAK_Simple_Usage_Plugin\WinTAK_Simple_Usage_Plugin\WinTAK_Simple_Usage_Plugin.pdb"
+
+--icon "C:\Users\User\Documents\GitHub\WinTAK_Simple_Usage_Plugin\WinTAK_Simple_Usage_Plugin\WinTAK_Simple_Usage_Plugin\Img\tech.png"
+
+--generateJsonList "C:\Users\User\Documents\GitHub\WinTAK_Simple_Usage_Plugin\WinTAK_Simple_Usage_Plugin\WinTAK_Simple_Usage_Plugin\JsonList.json"
+
+WpkBuilder.exe -v -i "WinTAK_Simple_Usage_Plugin" -d "WinTAK Simple Usage Plugin By C.A Torino" --plugins64 "C:\Users\User\Documents\GitHub\WinTAK_Simple_Usage_Plugin\WinTAK_Simple_Usage_Plugin\WinTAK_Simple_Usage_Plugin\WinTAK_Simple_Usage_Plugin.dll" --toolsData "C:\Users\User\Documents\GitHub\WinTAK_Simple_Usage_Plugin\WinTAK_Simple_Usage_Plugin\WinTAK_Simple_Usage_Plugin\WinTAK_Simple_Usage_Plugin.pdb" --icon "C:\Users\User\Documents\GitHub\WinTAK_Simple_Usage_Plugin\WinTAK_Simple_Usage_Plugin\WinTAK_Simple_Usage_Plugin\Img\tech.png"
+
+
+File can be found in C:\Users\User\Documents\WPKs
+
+
+
+
+
+
+

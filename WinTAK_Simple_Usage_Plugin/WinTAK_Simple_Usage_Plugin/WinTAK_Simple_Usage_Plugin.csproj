@@ -89,6 +89,9 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <None Include="BatchFile\WPK_Builder.bat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
@@ -100,6 +103,7 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="TextFileRead.txt" />
     <Resource Include="Img\tech.png" />
     <Resource Include="Img\tech.ico" />
     <Content Include="Img\tech.svg" />
