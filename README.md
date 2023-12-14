@@ -4,7 +4,9 @@
 
 A simple plugin showing a few of the basic components which can be utilized when you develop a plugin for **WinTAK**
 
-Old doxygen documentation has been uploaded to my website [here](https://iq-blue.com/WinTAK_SDK_Documentation/Doc/html).
+Old doxygen documentation has been added.
+
+You can also see it on my website [here](https://iq-blue.com/WinTAK_SDK_Documentation/Doc/html).
 
 Youtube example video can be found [coming soon]().
 
