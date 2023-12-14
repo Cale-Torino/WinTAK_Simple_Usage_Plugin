@@ -3,13 +3,10 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.Composition;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Net.Http;
+using System.Threading;
 using System.Windows;
-using System.Windows.Controls;
 using System.Windows.Input;
-using System.Windows.Media;
 using System.Xml;
 //using WinTak.Framework.Messaging;
 //using WinTak.CursorOnTarget.Services;
@@ -333,7 +330,92 @@ namespace WinTAK_Simple_Usage_Plugin
         }
 
 
+        private static bool _running;
 
+        public static void Start()
+        {
+            WinTak.UI.Notifications.Notification.NotifyInfo("Start HTTPS", "HTTPS request started");
+            if (_running) return;
+            Thread updateThread = new Thread(BackgroundUpdaterAsync) { IsBackground = true };
+            updateThread.Start();
+        }
+
+        private static async void BackgroundUpdaterAsync()
+        {
+            _running = true;
+            //SettingsClass.EnableNoIPUpdater
+            while (true)
+            {
+
+                using (HttpClient client = new HttpClient())
+                {
+                    WinTak.UI.Notifications.Notification.NotifyInfo("GetAsync Activated", "GetAsync request Activated");
+                    string url = "https://dummyjson.com/products/1";
+                    //var httpContent = new StringContent(payload.ToString(), Encoding.UTF8, "application/json");
+                    //logsrichTextBox.AppendText("SENT => " + Environment.NewLine);
+                    //logsrichTextBox.AppendText(url + Environment.NewLine);
+                    //Add Default Request Headers
+                    //client.DefaultRequestHeaders.Add("Authorization", $"Bearer {VarClass.At}");
+                    try
+                    {
+                        //using (HttpResponseMessage response = await client.GetAsync(new Uri(url)))
+                        using (HttpResponseMessage response = await client.GetAsync(new Uri(url)))
+                        {
+                            using (HttpContent content = response.Content)
+                            {
+                                //Read the result and display in Textbox
+                                string result = await content.ReadAsStringAsync();//Result string JSON
+                                string reasonPhrase = response.ReasonPhrase;//Reason OK, FAIL etc.
+                                WinTak.UI.Notifications.Notification.NotifyInfo("Try HTTPS Result", $"{result}");
+                                //logsrichTextBox.AppendText("RESULT => " + Environment.NewLine);
+                                //logsrichTextBox.AppendText(result + Environment.NewLine);
+                                //logsrichTextBox.AppendText(reasonPhrase + Environment.NewLine);
+                                //JsonGetDevicesSerializer(result);
+                            }
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        //MessageBox.Show(ex.Message, "Could not test eWeLink API", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        //Logger.WriteLine($" *** Error:{ex.Message} [eWeLink_API_Form] ***");
+                        return;
+                    }
+                }
+                /*                    try
+                                    {
+                                        Notification.NotifyInfo("Try HTTPS Activated", "Try HTTPS request Activated");
+                                        //HttpWebRequest request = (HttpWebRequest)WebRequest.Create(string.Format("https://dynupdate.no-ip.com/nic/update?hostname={0}", SettingsClass.NoIPHost));
+                                        HttpWebRequest request = (HttpWebRequest)WebRequest.Create(string.Format("https://dummyjson.com/products/1"));
+                                        request.Proxy = null;
+                                        request.UserAgent = string.Format("Plugin No-Ip Updater/2.0 {0}", SettingsClass.NoIPUsername);
+                                        request.Timeout = 10000;
+                                        request.Headers.Add(HttpRequestHeader.Authorization, string.Format("Basic {0}", Convert.ToBase64String(Encoding.ASCII.GetBytes(string.Format("{0}:{1}", SettingsClass.NoIPUsername, SettingsClass.NoIPPassword)))));
+                                        request.Method = "GET";
+
+                                        using (HttpWebResponse response = (HttpWebResponse)request.GetResponse())
+                                        {
+                                            Notification.NotifyInfo("HTTPS Response", $"{response.ContentType}");
+                                        response.
+                *//*                            using (HttpContent content = response)
+                                            {
+                                                //Read the result and display in Textbox
+                                                string result = await content.ReadAsStringAsync();//Result string JSON
+                                                string reasonPhrase = response.ReasonPhrase;//Reason OK, FAIL etc.
+                                                logsrichTextBox.AppendText("RESULT => " + Environment.NewLine);
+                                                logsrichTextBox.AppendText(result + Environment.NewLine);
+                                                logsrichTextBox.AppendText(reasonPhrase + Environment.NewLine);
+                                                JsonLoginSerializer(result);
+                                            }*//*
+                                        }
+                                    }
+                                    catch
+                                    {
+                                    }*/
+
+                Thread.Sleep(TimeSpan.FromMinutes(10));
+            }
+            _running = false;
+        }
 
 
 

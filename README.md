@@ -1,9 +1,5 @@
 # WinTAK Simple Usage Plugin
 
-*Developed by C.A Torino,*
-
-*November 10th 2023*
-
 [<img src="img/Plugin.gif" width="800"/>](img/Plugin.gif)
 
 A simple plugin showing a few of the basic components which can be utilized when you develop a plugin for **WinTAK**
@@ -361,6 +357,10 @@ Performance is much better with **8 GB - 12 or 16 GB** is even better.
 
 * [WinForms FreeTAKServer_Manager application](https://github.com/Cale-Torino/FreeTAKServer_Manager/tree/main/WinForms "WinForms application")
 * [WPF FreeTAKServer_Manager application](https://github.com/Cale-Torino/FreeTAKServer_Manager/tree/main/WPF "WPF application")
+
+*Developed by C.A Torino,*
+
+*November 10th 2023*
 
 * Links to IQ-BLUE Integrated Systems ZA.
     * [Website](https://iq-blue.com)
