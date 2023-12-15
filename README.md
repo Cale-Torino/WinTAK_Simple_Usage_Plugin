@@ -360,6 +360,14 @@ Performance is much better with **8 GB - 12 or 16 GB** is even better.
 * [WinForms FreeTAKServer_Manager application](https://github.com/Cale-Torino/FreeTAKServer_Manager/tree/main/WinForms "WinForms application")
 * [WPF FreeTAKServer_Manager application](https://github.com/Cale-Torino/FreeTAKServer_Manager/tree/main/WPF "WPF application")
 
+---
+
+4 fun I created a simple TAK-ZA easter egg from a template in .asm
+
+It's just visual not really doing anything but adds a bit of character.
+
+---
+
 *Developed by C.A Torino,*
 
 *November 10th 2023*
