@@ -8,7 +8,7 @@ Old doxygen documentation has been added.
 
 You can also see it on my website [here](https://iq-blue.com/WinTAK_SDK_Documentation/Doc/html).
 
-Youtube example video can be found [coming soon]().
+Youtube example video can be found [Make Your Own WinTAK Plugin in C#](https://www.youtube.com/watch?v=II5OTTplQEc).
 
 Plugin specs:
 - Plugin made for WinTAK `4.10.0.170`
