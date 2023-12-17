@@ -39,6 +39,29 @@ Examples currently added:
 - ✅ **FocusMapArea** (WinTAK UI)
 - ✅ **FocusMapAreaRadial** (COT with Radial) (WinTAK UI)
 - ⬜️ **Https request** (WinTAK UI)
+- ⬜️ **Video playback** (WinTAK UI)
+- ⬜️ **Label** (WinTAK UI)
+- ⬜️ **Path** (WinTAK UI)
+- ⬜️ **Progressbar** (WinTAK UI)
+- ⬜️ **ButtonStyles** (WinTAK UI)
+- ⬜️ **Textbox** (WinTAK UI)
+- ⬜️ **Combobox** (WinTAK UI)
+- ⬜️ **Links** (WinTAK UI)
+- ⬜️ **Picture files** (WinTAK UI)
+- ⬜️ **Checkbox** (WinTAK UI)
+- ⬜️ **Radiobutton** (WinTAK UI)
+- ⬜️ **Tabs** (WinTAK UI)
+- ⬜️ **System threading** threading example
+- ⬜️ **Tooltip** (WinTAK UI)
+- ⬜️ **Dialogs** (WinTAK UI)
+- ⬜️ **Custom messagebox** (WinTAK UI)
+- ⬜️ **Custom globe icons**
+- ⬜️ **Plugin logging**
+- ⬜️ **Open other programs from inside plugin**
+- ⬜️ **AllowRecomposition import**
+- ⬜️ **Creating queues**
+- ⬜️ **Iteration usage** for repetition such as foreach loop
+- ⬜️ **Exception handling**
 
 N.B the application has been created with the microsoft Visual Studio 2022 Community IDE. (https://visualstudio.microsoft.com/vs/)
 
@@ -46,6 +69,31 @@ https://dotnet.microsoft.com/download/visual-studio-sdks
 
 
 # Example Guide
+
+## Index
+
+0. Sources
+1. Coding Style
+2. Focus on a Map Area
+3. Focus on a MapObject and Showing the Radial Menu
+4. Runtime Plugin Loading and Part Recomposition
+5. Sending and Recieving CoT Messages
+6. UI Design
+7. Debugging Plugins
+8. System Requirements
+9. To do
+10. Links
+
+## 0. Sources
+
+- Places that helped my research for this plugin:
+    - Discord
+    - TAK.gov website
+    - TAK.gov dev documentation
+    - WinTAK-SDK-Documentation HTML files
+    - WinTAK manual
+    - GitHub
+    - Youtube
 
 ## 1. Coding Style
 
@@ -234,7 +282,7 @@ To send a CoT message to the network the `WinTak.Common.Services.ICommunicationS
 This interface has BroadcastCot and SendCot methods that can be used to either broadcast a CoT message to every node on the network,
 or send it to a known Contact on the network.
 
-## 5. UI Design
+## 6. UI Design
 
 [<img src="img/UIDesign.png" width="800"/>](img/UIDesign.png)
 
@@ -278,7 +326,7 @@ With the **WinTAK** `DefaultTheme.xaml` included in your **XAML** you can make u
 
 `LockSwitchStyle` - Style for checkbox that appears as a switch button. Change the Foreground color to customize the color displayed when in the 'locked' position.
 
-## Debugging Plugins
+## 7. Debugging Plugins
 
 [<img src="img/PostBuild.png" width="800"/>](img/PostBuild.png)
 
@@ -324,7 +372,7 @@ Check this checkbox and select OK.
 
 Any breakpoints you have set in your plugins code should be hit.
 
-## System Requirements
+## 8. System Requirements
 
 The latest version of **WinTAK** will run on **Win 10 64-bit** systems.
 
@@ -341,7 +389,7 @@ Performance is much better with **8 GB - 12 or 16 GB** is even better.
     WinTAK does not have any specific requirements for storage, 
     memory or processor speed, however, performance of the application will depend on the configuration.
 
-# TODO
+# 9. To do
 
 - Reduce code.
 - Improve methods
@@ -351,11 +399,11 @@ Performance is much better with **8 GB - 12 or 16 GB** is even better.
 
 > Checkout my tutorials https://tutorials.techrad.co.za/2021/04/13/freetakserver-manager
 
-> Video demonstration ToDo
+> Video demonstration https://www.youtube.com/watch?v=II5OTTplQEc (change in future)
 
 > Source code https://github.com/Cale-Torino/WinTAK_Simple_Usage_Plugin
 
-# Links
+# 10. Links
 
 * [WinForms FreeTAKServer_Manager application](https://github.com/Cale-Torino/FreeTAKServer_Manager/tree/main/WinForms "WinForms application")
 * [WPF FreeTAKServer_Manager application](https://github.com/Cale-Torino/FreeTAKServer_Manager/tree/main/WPF "WPF application")
